@@ -1,36 +1,69 @@
+/* Reset básico e configuração de estilo geral */
 html,
 body {
   background-color: #f8fafc;
+  color: #333333; /* Texto padrão mais suave */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+/* Melhorando a aparência de todos os elementos */
 * {
   box-sizing: border-box;
 }
 
+/* Ajustes para o main, centralizando o conteúdo */
 main {
-  padding: 5rem 0;
+  padding: 6rem 1rem; /* Mais espaçamento para header fixo e melhor visual */
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
+/* Ajuste do estilo do código para harmonizar com o design */
 code {
   background: #e2e8f0;
+  color: #333333;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 0.6rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+/* Configuração do container principal */
 .container {
-  height: 100vh;
+  max-width: 1200px; /* Largura máxima para melhor leitura */
+  margin: 0 auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Estilos para o link, mantendo a paleta neutra */
+a {
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #000000;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  main {
+    padding: 4rem 1rem; /* Reduz o padding para telas menores */
+  }
+
+  .container {
+    padding: 1rem;
+  }
 }

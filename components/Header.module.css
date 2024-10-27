@@ -1,0 +1,86 @@
+/* Header.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+  }
+  
+  .companyName {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #000000;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bookNow {
+    padding: 0.6rem 1.2rem;
+    background-color: #d4af37; /* Dourado sofisticado */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .bookNow:hover {
+    background-color: #b8972d;
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .header {
+      padding: 1rem;
+    }
+    
+    .nav {
+      display: none; /* Esconde o menu em telas menores */
+    }
+  
+    .actions {
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+  
